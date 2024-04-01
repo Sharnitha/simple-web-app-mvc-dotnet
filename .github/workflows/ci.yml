@@ -23,8 +23,8 @@ jobs:
     steps:
      - name: Checkout code
        uses: actions/checkout@v4
-     - name: Change Directory
-       run: cd SimpleWebAppMVC/
+     # - name: Change Directory
+     #   run: cd SimpleWebAppMVC/
      - name: Installing dependency
        run: dotnet restore
      - name: Dotnet build
