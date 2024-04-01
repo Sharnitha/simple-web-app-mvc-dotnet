@@ -31,8 +31,10 @@ jobs:
        run: dotnet build --configuration Release
      - name: Dotnet publish
        run: dotnet publish --configuration Release
-     - name: UploadArtifact
-       uses: actions/upload-artifact@v4.3.1
-       with:
-         name: Simplewebappmvc
-         path: bin/Release/net7.0/SimpleWebAppMVC.dll
+     - name: present workdirectory
+       run: pwd
+     # - name: UploadArtifact
+     #   uses: actions/upload-artifact@v4.3.1
+     #   with:
+     #     name: Simplewebappmvc
+     #     path: bin/Release/net7.0/SimpleWebAppMVC.dll
