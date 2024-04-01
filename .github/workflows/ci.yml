@@ -11,7 +11,7 @@ on:
 jobs:
   DotnetInstall:
     name: Run dotnet on Ubuntu
-    runs-on: self-hsoted
+    runs-on: self-hosted
     steps:
       - name: Dotnet install
         uses: actions/setup-dotnet@v4
